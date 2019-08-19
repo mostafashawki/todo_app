@@ -1,0 +1,9 @@
+/todo/backend/node_modules
+/todo/react-frontend/node_modules
+/todo/backend/package-lock.json
+/todo/frontend/package-lock.json
+/auth-api/node_modules
+/auth-api/package-lock.json
+/docs-api/node_modules
+/docs-api/package-lock.json
+
