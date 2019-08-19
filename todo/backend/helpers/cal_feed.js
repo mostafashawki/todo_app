@@ -1,18 +1,8 @@
 const dateFormat = require("dateformat");
 const schedule = require("node-schedule");
-const _ = require("lodash");
 const { writeFileSync } = require("fs");
 const Todo = require("../models/Todo");
 
-// const calfeed = function() {
-//   Todo.find({ user: req.user.id })
-//     .then(todo => {
-//       if (!todo) return res.status(404).json("no todos!");
-//       res.json(todo);
-//       console.log(todo);
-//     })
-//     .catch(err => console.log(err));
-// };
 
 /////////////////////////////////////////////////////////////
 //////////////////START SCHEDULE TASK (cal feed)/////////////
@@ -73,13 +63,7 @@ const calfeed = schedule.scheduleJob("1 * * * *", function() {
       console.log("DONE ALL");
     })
     .catch(err => console.log(err));
-  //   db[thisYear].find(
-  //     { dueDate: { $gte: new Date(), $lt: new Date("2099-1-1") } },
-  //     (err, todos) => {
-  //       // console.log("todos", todos);
 
-  //     }
-  //   );
 });
 
 module.exports = calfeed;
