@@ -5,6 +5,7 @@ Web based todo application with calendar feeds, and attached documents features
 ## Architecture
 
 I use here a microservices architecture, with three APIs (Nodejs) with their independent database (Mongodb & In memory database) and environment.
+
 ![Architecture](/arch.jpg "App Architecture")
 
 ## Installation & Run (Backend)
